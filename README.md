@@ -4,17 +4,21 @@ This project implements an **elevator control system** in Python using the objec
 The application simulates the movement of an elevator, its stops and status, 
 and handles passengers requesting rides from different floors.
 
-## Install
-require **python 3.9+**
+## Installation
+To use this project, you need to have Python 3.9+ installed. You can clone the repository by running the following command in your terminal:
 ```bash
 git clone https://github.com/Otherwolf/example_elevator.git
-
-# for testing
+```
+Additionally, if you want to run the tests, you need to install pytest by running the following command:
+```bash
 pip install pytest
 ```
 
 ## Simple Demo
-
+```bash
+python main.py
+```
+or
 ```python
 from elevator import Elevator, Passenger
 
@@ -41,8 +45,9 @@ elevator.open_doors()
 passenger.exit_elevator(elevator)
 elevator.close_doors()
 ```
-
+This code demonstrates a simple scenario where a passenger calls the elevator, enters it, and then exits at their desired floor.
 ## Tests
+To run the tests, execute the following command:
 
 ```python
 pytest elevator_tests.py
